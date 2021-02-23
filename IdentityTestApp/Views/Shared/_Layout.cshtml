@@ -16,7 +16,8 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IdentityTestApp</a>
+                @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IdentityTestApp</a>*@
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://www.mbi.com.tr/content/images/logo/logo-1.png" width="150" height="50" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -45,11 +46,26 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    @*<footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - IdentityTestApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>*@
+    <div class="footer-07">
         <div class="container">
-            &copy; 2021 - IdentityTestApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <!-- Row 1 Starts -->
+            <div class="row row1">
+                <!-- Social Icons Starts -->
+                <div class="col-lg-3 col-md-3 col-sm-3 call-now text-white-50"><i class="fa fa-phone"></i> Telefon: <a href="">0 212 275 87 88</a></div>
+                <!-- Social Icons Ends -->
+                <div class="col-lg-6 col-md-6 col-sm-6 footer-logo"><a href="https://www.mbi.com.tr"><img src="https://www.mbi.com.tr/content/images/logo/logo-1.png" alt=""></a></div>
+                <!-- Social Icons Starts -->
+                <div class="col-lg-3 col-md-3 col-sm-3 mail text-white-50"><i class="fa fa-envelope"></i>MAİL: <a href="mailto:info@mbi.com.tr">info@mbi.com.tr</a></div>
+                <!-- Social Icons Ends -->
+            </div>
+            <!-- Row 1 Ends -->
         </div>
-    </footer>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
